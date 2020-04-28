@@ -21,6 +21,7 @@
 
 #include "avcodec.h"
 
+extern const AVHWAccel ff_h263_v4l2request_hwaccel;
 extern const AVHWAccel ff_h263_vaapi_hwaccel;
 extern const AVHWAccel ff_h263_videotoolbox_hwaccel;
 extern const AVHWAccel ff_h264_d3d11va_hwaccel;
@@ -55,6 +56,7 @@ extern const AVHWAccel ff_mpeg2_vdpau_hwaccel;
 extern const AVHWAccel ff_mpeg2_videotoolbox_hwaccel;
 extern const AVHWAccel ff_mpeg2_xvmc_hwaccel;
 extern const AVHWAccel ff_mpeg4_nvdec_hwaccel;
+extern const AVHWAccel ff_mpeg4_v4l2request_hwaccel;
 extern const AVHWAccel ff_mpeg4_vaapi_hwaccel;
 extern const AVHWAccel ff_mpeg4_vdpau_hwaccel;
 extern const AVHWAccel ff_mpeg4_videotoolbox_hwaccel;
