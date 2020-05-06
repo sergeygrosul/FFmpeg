@@ -18,10 +18,12 @@
 
 #include <drm_fourcc.h>
 #include <linux/media.h>
+#include <sys/ioctl.h>
 #include <sys/mman.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <unistd.h>
 
 #include <sys/sysmacros.h>
 #include <libudev.h>
@@ -29,6 +31,9 @@
 #include "decode.h"
 #include "internal.h"
 #include "v4l2_request.h"
+
+#define V4L2_BUF_CAP_SUPPORTS_M2M_HOLD_CAPTURE_BUF	(1 << 5)
+#define V4L2_BUF_FLAG_M2M_HOLD_CAPTURE_BUF	0x00000200
 
 uint64_t ff_v4l2_request_get_capture_timestamp(AVFrame *frame)
 {
