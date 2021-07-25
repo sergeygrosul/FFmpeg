@@ -350,7 +350,7 @@ static int v4l2_request_hevc_start_frame(AVCodecContext *avctx,
     };
 
     if (pps->dependent_slice_segments_enabled_flag)
-        controls->pps.flags |= V4L2_HEVC_PPS_FLAG_DEPENDENT_SLICE_SEGMENT;
+        controls->pps.flags |= V4L2_HEVC_PPS_FLAG_DEPENDENT_SLICE_SEGMENT_ENABLED;
 
     if (pps->output_flag_present_flag)
         controls->pps.flags |= V4L2_HEVC_PPS_FLAG_OUTPUT_FLAG_PRESENT;
