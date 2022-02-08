@@ -1,0 +1,21 @@
+./configure --prefix=/usr/local \
+--libdir=/usr/lib/arm-linux-gnueabihf \
+--disable-doc \
+    --enable-nonfree \
+    --enable-gpl \
+    --enable-v4l2_request \
+    --enable-libx264 \
+    --enable-libmp3lame \
+    --enable-libpulse \
+    --enable-shared \
+--enable-decoder=h264_v4l2m2m \
+--enable-parser=h264 \
+--enable-hwaccel=h264_v4l2request \
+--enable-libudev \
+--enable-libv4l2 \
+--enable-libdrm \
+--enable-v4l2-request \
+--enable-debug=3 \
+--extra-cflags="-O0 -g" \
+--logfile=config.log
+

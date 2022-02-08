@@ -20,6 +20,9 @@
 #define AVCODEC_V4L2_REQUEST_H
 
 #include <linux/videodev2.h>
+#include "../include/h264-ctrls.h"
+#include "../include/mpeg2-ctrls.h"
+#include "../include/hevc-ctrls.h"
 
 #include "libavutil/hwcontext_drm.h"
 
